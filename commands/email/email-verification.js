@@ -11,9 +11,6 @@ module.exports = {
         if (!args[0]) {
             return message.channel.send(':x: Missing email!')
         }
-        if (args[0] == db.get(`user_${message.author.id}_email`)) {
-            return message.channel.send(':x: This is already your email')
-        }
         const filter = (m) => m.author.id == message.author.id && !m.author.bot
         const collector = await message.channel.createMessageCollector(filter, { max: 1, time: 180000 })
         const msg = await message.channel.send('Sending Confirmation Email...')
