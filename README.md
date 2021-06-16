@@ -16,4 +16,4 @@
 }
 ```
 
-**if you have any problem with code you can just dm me in discord Fnr#9999**
+**if you have any problem with code you can just dm me in discord Fnr#0017**
